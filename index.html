@@ -3,29 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Country Finder - Rest Countries API</title>
+    <title>Country Information Finder</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1><span class="icon">🌍</span> Country Search</h1>
-        
-        <!-- Search Bar Section -->
-        <div class="search-box">
-            <input type="text" id="countryInput" placeholder="Enter country name (e.g., France, India)...">
-            <button id="searchBtn">Search</button>
-        </div>
+<div class="container">
+    <h1>🌍 Country Information Finder</h1>
 
-        <!-- Dynamic Output Section -->
-        <div id="result" class="result-card hidden">
-            <!-- Details inserted dynamically via JS -->
-        </div>
-
-        <!-- Error / Loading Message Container -->
-        <div id="message" class="message"></div>
+    <div class="search-box">
+        <input type="text" id="countryInput" placeholder="Enter country name">
+        <button onclick="searchCountry()">Search</button>
     </div>
 
-    <script src="script.js"></script>
+    <div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
